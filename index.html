@@ -17,6 +17,16 @@
 	height: 100%;
 	z-index: 9999;
 	background: url('1871-Loading.gif') 50% 50% no-repeat rgb(249,249,249);
+		
+		.centered {
+    text-align: center;
+    width: 100%;
+}
+
+.centered_tab {
+    float:none /*to make sure there is no active float*/
+    display: inline-block
+}
 	</style>
 	
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -54,10 +64,20 @@ $(window).load(function() {
  <div class="powr-faq" id="396f0ef9_1502754317"></div>
     </div>
 
-	<footer class="footer">
-      <div class="container">
-        <p class="text-muted">Place sticky footer content here.</p>
-      </div>
-    </footer>
+	<div class="centered">
+
+   <ul ... >
+      <li class="centered_tab" ...>
+        <a ... >My First Tab</a>
+      </li>
+      <li class="centered_tab" ...>
+        <a ... >My Second Tab</a>
+      </li>
+      <li class="centered_tab" ...>
+        <a ... >My Third Tab</a>
+      </li>
+   </ul>
+
+</div>
 </body>
 		</html>
