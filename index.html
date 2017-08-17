@@ -49,42 +49,30 @@
 	height:100%;
 }
 		
-.featured-header {
-    border-bottom: none;
-    border-left: none;
-    border-right: none;
-    text-align: center;
-    border-color: #999;
+ h1 {
+  white-space: nowrap;
+  overflow: hidden;
 }
-.featured-header.color {
-    border-color: orange;
+
+h1:before, 
+h1:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
 }
-.featured-header.color legend{
-    color: orange;
+
+h1:before {
+  right: 0.5em;
+  width: 300px;
 }
-.featured-header.radius {
-    border-radius: 12px;
+
+h1:after {
+  left: 0.5em;
+  width: 100%;
 }
-.featured-header.double {
-    border-style: double;
-    border-top-width: 6px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-}
-.featured-header.cool {
-    font-family: sans-serif;
-}
-.featured-header legend {
-    -webkit-padding-start: 8px;
-    -webkit-padding-end: 8px;
-    background: transparent;
-    /** It's cool because you don't need to fill your bg-color as you would need to in some of the other examples that you can find (: */
-    font-weight: normal;
-    /* I preffer the text to be regular instead of bold  */
-    color: #999;
-}	
-	
 
 	</style>
 	
@@ -134,7 +122,7 @@ $(window).load(function() {
 <div class="content"><script src="//www.powr.io/powr.js" external-type="html"></script> 
 	<div class="powr-tabs" id="a9c83aca_1502742189"></div></div>
 
-<hr />
+	<h1>Watch</h1>
 <div class="container">
 <div class="row">
 <div class="col-sm-6"><center>
@@ -152,8 +140,7 @@ $(window).load(function() {
 </div>
 </div>
 
-<fieldset class="featured-header cool">
-    <legend>TOO COOL FOR SCHOOL</legend>	
+
 <footer class="footer">
       <div class="container">
 	      <p class="text-muted"><center>1871.LIVE is a project of <a href="http://1871.com">1871</a> | Powered by <a href="http://aerialspac.es">AerialSpaces </a></center></p>
